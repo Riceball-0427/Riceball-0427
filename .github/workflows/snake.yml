@@ -1,0 +1,39 @@
+name: Generate Contribution Snake
+
+on:
+  schedule:
+    - cron: "0 18 * * *" # 日本時間午前3時（UTC 18:00）に毎日自動実行
+  workflow_dispatch: # 手動実行可能にする
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # コントリビューショングリッドからスネークアニメーションを生成
+      - name: Generate github-contribution-grid-snake.svg
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          
+      # 生成されたSVGファイルを別ブランチ(output)にデプロイ
+      - name: Push github-contribution-grid-snake.svg to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
