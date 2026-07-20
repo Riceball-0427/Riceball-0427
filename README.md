@@ -1,7 +1,7 @@
-# Ichiro Shimamoto (Riceball-0427) 👋
+# Riceball (Riceball-0427) 👋
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Outfit&size=24&pause=1000&color=7aa2f7&background=00000000&width=550&height=45&vCenter=true&lines=Hello%2C+I%27m+Ichiro+Shimamoto!+%F0%9F%91%8B%3BAspiring+Infrastructure+Engineer+%F0%9F%9B%A0%EF%B8%8F%3BSecurity+Specialist+in+Training+%F0%9F%9B%A1%EF%B8%8F" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Outfit&size=24&pause=1000&color=7aa2f7&background=00000000&width=550&height=45&vCenter=true&lines=Hello%2C+I%27m+Riceball!+%F0%9F%91%8B%3BAspiring+Infrastructure+Engineer+%F0%9F%9B%A0%EF%B8%8F%3BSecurity+Specialist+in+Training+%F0%9F%9B%A1%EF%B8%8F" alt="Typing SVG" />
 </p>
 
 <p align="center">
